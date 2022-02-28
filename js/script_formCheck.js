@@ -1,42 +1,30 @@
-﻿document.getElementById("sendBtn").addEventListener(
-  "click",
-  () => {
-    checkName();
-    checkPwd();
-    checkDate2();
-    if (correctName && correctPwd && correctDate2) {
-      Swal.fire("讚讚讚!", "成功! ｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡", "success");
-      document.querySelector(
-        ".swal2-container.swal2-shown"
-      ).style.zIndex = 9999;
-    } else {
-      correctName = false;
-      correctPwd = false;
-      correctDate2 = false;
-      Swal.fire({
-        type: "error",
-        title: "錯了喔",
-        text: "以為我沒發現嗎?(^u^)",
-      });
-      document.querySelector(
-        ".swal2-container.swal2-shown"
-      ).style.zIndex = 9999;
-    }
-  },
-  { once: true }
-);
-document.getElementById("reset").addEventListener(
-  "click",
-  () => {
-    checkName();
-    checkPwd();
-    checkDate2();
-    document.getElementById("nameFeedback").innerHTML = "";
-    document.getElementById("pwdFeedback").innerHTML = "";
-    document.getElementById("dateFeedback").innerHTML = "";
-  },
-  { once: true }
-);
+﻿document.getElementById("sendBtn").addEventListener("click", () => {
+  checkName();
+  checkPwd();
+  checkDate2();
+  if (correctName && correctPwd && correctDate2) {
+    Swal.fire("讚讚讚!", "成功! ｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡", "success");
+    document.querySelector(".swal2-container.swal2-shown").style.zIndex = 9999;
+  } else {
+    correctName = false;
+    correctPwd = false;
+    correctDate2 = false;
+    Swal.fire({
+      type: "error",
+      title: "錯了喔",
+      text: "以為我沒發現嗎?(^u^)",
+    });
+    document.querySelector(".swal2-container.swal2-shown").style.zIndex = 9999;
+  }
+});
+document.getElementById("reset").addEventListener("click", () => {
+  checkName();
+  checkPwd();
+  checkDate2();
+  document.getElementById("nameFeedback").innerHTML = "";
+  document.getElementById("pwdFeedback").innerHTML = "";
+  document.getElementById("dateFeedback").innerHTML = "";
+});
 let correctName = false;
 let correctPwd = false;
 let correctDate2 = false;
