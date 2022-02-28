@@ -1,24 +1,12 @@
-document.addEventListener(
-  "DOMContentLoaded",
-  () => {
-    document.addEventListener(
-      "click",
-      (e) => {
-        click = true;
-        blackStar(e);
-      },
-      { once: true }
-    );
-    document.addEventListener(
-      "mouseover",
-      (e) => {
-        if (!click) blackStar(e);
-      },
-      { once: true }
-    );
-  },
-  { once: true }
-);
+document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("click", (e) => {
+    click = true;
+    blackStar(e);
+  });
+  document.addEventListener("mouseover", (e) => {
+    if (!click) blackStar(e);
+  });
+});
 
 let click = false;
 function blackStar(e) {

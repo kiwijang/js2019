@@ -93,16 +93,10 @@ function reverse_removeHide() {
   }
 }
 //=====================================================================
-document
-  .getElementById("next")
-  .addEventListener("click", skipNext, { once: true });
-document
-  .getElementById("prev")
-  .addEventListener("click", skipPrev, { once: true });
-document.getElementById("play").addEventListener("click", play, { once: true });
-document
-  .getElementById("pause")
-  .addEventListener("click", pause, { once: true });
+document.getElementById("next").addEventListener("click", skipNext);
+document.getElementById("prev").addEventListener("click", skipPrev);
+document.getElementById("play").addEventListener("click", play);
+document.getElementById("pause").addEventListener("click", pause);
 
 function skipNext() {
   console.log(currentPage);
@@ -177,19 +171,15 @@ let minipics = document.querySelectorAll(`.minipic>img`);
 let mainpic = document.getElementById("mainpic");
 for (let minipic of minipics) {
   //滑過
-  minipic.addEventListener("mouseover", pauseMiniShow, { once: true });
+  minipic.addEventListener("mouseover", pauseMiniShow);
   //按下滑鼠
-  minipic.addEventListener(
-    "mousedown",
-    (e) => {
-      resetMainpic(e.target.getAttribute("data-pic"));
-      pauseMiniShow(e);
-      pause();
-    },
-    { once: true }
-  );
+  minipic.addEventListener("mousedown", (e) => {
+    resetMainpic(e.target.getAttribute("data-pic"));
+    pauseMiniShow(e);
+    pause();
+  });
   //放開滑鼠
-  minipic.addEventListener("mouseup", pauseMiniShow, { once: true });
+  minipic.addEventListener("mouseup", pauseMiniShow);
 }
 
 function pauseMiniShow(e) {

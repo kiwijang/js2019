@@ -1,42 +1,27 @@
-document.addEventListener(
-  "DOMContentLoaded",
-  () => {
-    let selectYear = document.querySelector("#year").value;
-    let selectMonth = document.querySelector("#month").value;
-    setDateSelect(selectYear, selectMonth);
-    setCalendar();
-    document.querySelectorAll(".select_wrap > select").forEach(
-      function (el) {
-        el.addEventListener("change", function () {
-          setCalendar();
-        });
-      },
-      { once: true }
-    );
-    document.getElementById("month").addEventListener(
-      "change",
-      function () {
-        selectYear = document.querySelector("#year").value;
-        selectMonth = document.querySelector("#month").value;
-        let selectDate = document.querySelector("#date").value;
-        setDateSelectFromMY(selectYear, selectMonth, selectDate);
-      },
-      { once: true }
-    );
+document.addEventListener("DOMContentLoaded", () => {
+  let selectYear = document.querySelector("#year").value;
+  let selectMonth = document.querySelector("#month").value;
+  setDateSelect(selectYear, selectMonth);
+  setCalendar();
+  document.querySelectorAll(".select_wrap > select").forEach(function (el) {
+    el.addEventListener("change", function () {
+      setCalendar();
+    });
+  });
+  document.getElementById("month").addEventListener("change", function () {
+    selectYear = document.querySelector("#year").value;
+    selectMonth = document.querySelector("#month").value;
+    let selectDate = document.querySelector("#date").value;
+    setDateSelectFromMY(selectYear, selectMonth, selectDate);
+  });
 
-    document.getElementById("year").addEventListener(
-      "change",
-      function () {
-        selectYear = document.querySelector("#year").value;
-        selectMonth = document.querySelector("#month").value;
-        let selectDate = document.querySelector("#date").value;
-        setDateSelectFromMY(selectYear, selectMonth, selectDate);
-      },
-      { once: true }
-    );
-  },
-  { once: true }
-);
+  document.getElementById("year").addEventListener("change", function () {
+    selectYear = document.querySelector("#year").value;
+    selectMonth = document.querySelector("#month").value;
+    let selectDate = document.querySelector("#date").value;
+    setDateSelectFromMY(selectYear, selectMonth, selectDate);
+  });
+});
 //年
 (function () {
   let html = "";
