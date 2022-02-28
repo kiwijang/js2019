@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>javascript作業</title>
+  <link rel="Shortcut Icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="index.html">九九乘法表</a>
+        <a href="formCheck.html">表單驗證</a>
+        <a href="star.html">評點製作</a>
+        <a class="headerNow" href="ad.html">廣告輪播</a>
+        <a href="calender.html">製作2010~2020年日曆</a>
+    </nav>
+  </header>
+  <div id="container">
+    <div class="photowall">
+      <div class="mainpic" id="mainpic">
+          <a class="" target="_blank" href="https://zh.wikipedia.org/wiki/BanG_Dream!" title="BanG_Dream!">
+            <img data-pic="1" src="images/1.jpg" alt="">
+          </a>
+          <a class="hide" target="_blank" href="https://zh.wikipedia.org/wiki/BanG_Dream!" title="BanG_Dream!">
+            <img data-pic="2" src="images/2.jpg" alt="">
+          </a>
+          <a class="hide" target="_blank" href="https://zh.wikipedia.org/wiki/BanG_Dream!" title="BanG_Dream!">
+            <img data-pic="3" src="images/3.jpg" alt="">
+          </a>
+          <a class="hide" target="_blank" href="https://zh.wikipedia.org/wiki/BanG_Dream!" title="BanG_Dream!">
+            <img data-pic="4" src="images/4.jpg" alt="">
+          </a>
+          <a class="hide" target="_blank" href="https://zh.wikipedia.org/wiki/BanG_Dream!" title="BanG_Dream!">
+            <img data-pic="5" src="images/5.jpg" alt="">
+          </a>
+      </div>
+      <div class="minipic">
+        <img class="a"  data-pic="1" src="images/1.jpg" alt="">
+        <img data-pic="2" src="images/2.jpg" alt="">
+        <img data-pic="3" src="images/3.jpg" alt="">
+        <img data-pic="4" src="images/4.jpg" alt="">
+        <img data-pic="5" src="images/5.jpg" alt="">
+        
+        <div class="btnwrap">
+            <button id="prev"><img src="images/skip_previous.png" alt=""></button>
+            <button id="next"><img src="images/skip_next.png" alt=""></button>
+          <button id="pause"><img src="images/pause.png" alt=""></button>
+          <button id="play" class="hide"><img src="images/play.png" alt=""></button>
+        </div>
+      </div>
+      <ul>
+        <li>「點按前、後換頁鍵」:將暫停撥放</li>
+        <li>「在小圖上滑動滑鼠」靜止 1.5 秒後將繼續撥放</li>
+        <li>「滑鼠長按小圖(不放開滑鼠)」:將暫停撥放</li>
+        <li>「點按暫停鍵」:會顯示繼續撥放</li>
+        <li>「點按大圖」:為連結開啟新分頁</li>
+      </ul>
+    </div>
+  </div>
+  <script src="js/script_ad.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>javascript作業</title>
+  <link href="css/main.css" rel="stylesheet" />
+  <link rel="Shortcut Icon" type="image/x-icon" href="images/favicon.ico">
+  <script src="sweetalert-master/src//sweetalert.js"></script>
+  <script src="sweetalert-master/src//sweetalert.css"></script>
+  <script>
+    Swal.fire(
+      'Good job!',
+      'You clicked the button!',
+      'success'
+    )
+  </script>
+</head>
+<body>
+    <header>
+      <nav>
+          <a href="index.html">九九乘法表</a>
+          <a href="formCheck.html">表單驗證</a>
+          <a href="star.html">評點製作</a>
+          <a href="ad.html">廣告輪播</a>
+          <a class="headerNow" href="calender.html">製作2010~2020年日曆</a>
+      </nav>
+    </header>
+  <div id="container">
+    <div class="select_wrap">
+      <select id="year"></select>
+      <span>年</span>
+      <select id="month"></select>
+      <span>月</span>
+      <select id="date"></select>
+      <span>日</span>
+    </div>
+    <div class="calendar_wrap">
+      <h5 id="year_h5">0000年</h5>
+      <h5 id="month_h5">00月</h5>
+      <h5 id="date_h5">00日</h5>
+      <div class="tbwrap">
+        <table>
+          <thead>
+              <th>日</th>
+              <th>一</th>
+              <th>二</th>
+              <th>三</th>
+              <th>四</th>
+              <th>五</th>
+              <th>六</th>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="js/script_calendar.js"></script>
+</body>
+</html>

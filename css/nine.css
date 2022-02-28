@@ -1,0 +1,20 @@
+﻿table,td {
+    margin: 10px auto;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: Arial;
+    border-collapse: collapse;
+    border: 2px solid white;
+}
+td {
+    padding: 10px;
+    background-color: goldenrod;
+}
+
+th {
+    font-size: 20px;
+    padding: 10px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}

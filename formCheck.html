@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Form Check</title>
+  <link href="css/main.css" rel="stylesheet" />
+  <link rel="Shortcut Icon" type="image/x-icon" href="images/favicon.ico">
+  <script src="js/sweetalert.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">九九乘法表</a>
+            <a class="headerNow" href="formCheck.html">表單驗證</a>
+            <a href="star.html">評點製作</a>
+            <a href="ad.html">廣告輪播</a>
+            <a href="calender.html">製作2010~2020年日曆</a>
+        </nav>
+    </header>
+    <div id="container">
+            <fieldset>
+                    <legend>Form Check</legend>
+                    <form id="myform" action="#">
+                        <label>
+                            <p class="colName">姓名</p>
+                            <input id="name" type="text" name="name" placeholder="請輸入名字..." onkeyup="checkName()" />
+                        </label>
+                        <span id="nameFeedback"></span>
+                        <p>1.不可空白 2.至少兩個字以上 3.必須全部為中文字</p>
+                        <hr>
+                        <label>
+                            <p class="colName">密碼</p>
+                            <input id="pwd" type="password" name="pwd" placeholder="請輸入密碼..." onkeyup="checkPwd()" />
+                        </label>
+                        <span id="pwdFeedback"></span>
+                        <p>1.不可空白 2.至少6個字且必須包含英文字母、數字、特殊字元[!@#$%^&*]</p>
+                        <hr>
+                        <!-- <label style="display: none;">
+                            日期
+                            <input id="date" type="date" name="date" onchange="checkDate()" />
+                        </label>
+                        <hr> -->
+                        <label>
+                            <p class="colName">日期</p>
+                            <input id="ipdate" type="text" name="date" placeholder="ex.2019/9/27" onkeyup="checkDate2()" />
+                        </label>
+                        <span id="dateFeedback"></span>
+                        <p>格式:西元年/月/日 yyyy/MM/dd</p>
+                        <hr>
+                        <input id="sendBtn" type="button" value="送出">
+                        <input id="reset" type="reset" value="清除">
+                    </form>
+                </fieldset>
+
+    </div>
+    <!-- /////////////////////////////////////////// -->
+    <script src="js/script_formCheck.js"></script>
+</body>
+</html>

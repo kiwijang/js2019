@@ -1,0 +1,36 @@
+.starimg{
+    transition: 0.2s;
+    -webkit-filter: grayscale(1);
+}
+.starimg:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+.starimg:active{
+    transition: 0.2s;
+    transform: scale(0.9);
+}
+.y{
+    transition: 0.2s;
+    -webkit-filter: grayscale(0);
+}
+.wrap{
+    box-shadow: 0px 3px 15px rgba(0,0,0, 0.5);
+    border-radius: 10px;
+    padding: 30px;
+    user-select: none;
+}
+.wrap > h2{
+    text-align: center;
+    margin: 20px auto;
+}
+.wrap > p{
+    text-align: center;
+    margin: 20px auto;
+    letter-spacing: 2px;
+    font-size: 18px;
+    height: 20px;
+}
+.wrappic > img{
+    box-shadow: 0px 3px 15px rgba(0,0,0, 0.5);
+}
