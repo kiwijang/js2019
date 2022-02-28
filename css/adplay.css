@@ -1,105 +1,105 @@
-ul{
-    margin-top: 130px;
-    margin-left: -40px;
-    font-size: 13px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    list-style-type: square;
-    color: rgb(141, 141, 141);
-    user-select: text;
+ul {
+  margin-top: 130px;
+  margin-left: -40px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  list-style-type: square;
+  color: rgb(141, 141, 141);
+  user-select: text;
 }
-.photowall{
-    box-shadow: 0px 3px 15px rgba(0,0,0, 0.5);
-    border-radius: 10px;
-    margin-top: 20px;
-    padding: 40px 30px 50px 30px;
-    height: 350px;
-    user-select: none;
+.photowall {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 40px 30px 50px 30px;
+  height: 350px;
+  user-select: none;
 }
-.btnwrap{
-    float: right;
+.btnwrap {
+  float: right;
 }
-.btnwrap > button{
-    transition: 0.3s;
-    width: 50px;
-    background-color: white;
-    border: none;
-    margin-top: 8px;
-    outline: none;
+.btnwrap > button {
+  transition: 0.3s;
+  width: 50px;
+  background-color: white;
+  border: none;
+  margin-top: 8px;
+  outline: none;
 }
-#play{
-    animation: playAni 1s infinite;
+#play {
+  animation: playAni 1s infinite;
 }
-.btnwrap > button:hover{
-    transition: 0.3s;
-    opacity: 0.5;
+.btnwrap > button:hover {
+  transition: 0.3s;
+  opacity: 0.5;
 }
-.btnwrap > button:active{
-    transition: 0.1s;
-    transform: scale(0.93);
-    opacity: 0.5;
+.btnwrap > button:active {
+  transition: 0.1s;
+  transform: scale(0.93);
+  opacity: 0.5;
 }
-.btnwrap > button > img{
-    vertical-align: middle;
+.btnwrap > button > img {
+  vertical-align: middle;
 }
 /* 小照片 */
-.minipic{
-    float: left;
-    padding-top: 10px;
-    height: 60px;
-    width: 100%;
+.minipic {
+  float: left;
+  padding-top: 10px;
+  height: 60px;
+  width: 100%;
 }
-.minipic > img{
-    transition: 0.3s;
-    width: 80px;
-    vertical-align: top;
-    padding-bottom: 5px;
-    filter: brightness(.5);
+.minipic > img {
+  transition: 0.3s;
+  width: 80px;
+  vertical-align: top;
+  padding-bottom: 5px;
+  filter: brightness(0.5);
 }
-.minipic > img:hover{
-    transition: 0.3s;
-    filter: brightness(1);
-    border-bottom: 8px solid rgb(28, 218, 252);
+.minipic > img:hover {
+  transition: 0.3s;
+  filter: brightness(1);
+  border-bottom: 8px solid rgb(28, 218, 252);
 }
-.a{
-    transition: 0.3s;
-    filter: brightness(1) !important;
-    border-bottom: 8px solid rgb(0, 9, 59);
+.a {
+  transition: 0.3s;
+  filter: brightness(1) !important;
+  border-bottom: 8px solid rgb(0, 9, 59);
 }
 /* 大照片 */
-.mainpic{
-    margin: auto;
-    height: 300px;
-    overflow: hidden;
+.mainpic {
+  margin: auto;
+  height: 300px;
+  overflow: hidden;
 }
-.mainpic > a > img{
+.mainpic > a > img {
+  transition: 0.3s;
+  width: 750px;
+  animation: fadepic 1s;
+  /* border-top: 8px solid #000; */
+}
+.hide {
+  display: none;
+}
+@keyframes fadepic {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes playAni {
+  0% {
     transition: 0.3s;
-    width: 750px;
-    animation: fadepic 1s;
-    /* border-top: 8px solid #000; */
-}
-.hide{
-    display: none;
-}
-@keyframes fadepic{
-    0%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-@keyframes playAni{
-    0%{
-        transition: 0.3s;
-        transform: scale(0.9);
-    }
-    50%{
-        transition: 0.3s;
-        transform: scale(0.8);
-    }
-    100%{
-        transition: 0.3s;
-        transform: scale(0.95);
-    }
+    transform: scale(0.9);
+  }
+  50% {
+    transition: 0.3s;
+    transform: scale(0.8);
+  }
+  100% {
+    transition: 0.3s;
+    transform: scale(0.95);
+  }
 }
