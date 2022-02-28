@@ -3,7 +3,7 @@
 1. adblock 擴充套件會阻擋 adplay.css 的載入@@
 本來以為是 import 的問題，後來才發現是套件的關係:0
 
-2.  {once: true}
+2.  addEventListener 的 options {capture: false, once: false, passive: false}
 - addEventListener 預設 capture: false 冒泡
 https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 
