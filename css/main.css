@@ -1,0 +1,128 @@
+@import "../css/nine.css";
+@import "../css/star.css";
+@import "../css/formcheck.css";
+@import "../css/adplay.css";
+@import "../css/calendar.css";
+
+/* *{
+  border: 1px solid #000;
+} */
+.deco{
+  display: block;
+  position: absolute;
+  writing-mode: vertical-lr;
+  letter-spacing: 5px;
+  border: 3px solid rgb(255, 203, 203);
+  border-left: 20px solid rgb(255, 129, 129);
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  color: #fff;
+  padding: 30px;
+  margin-left: 30px;
+  z-index: 999;
+}
+.deco::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 255px;
+  left: 60px;
+  width: 30px;
+  height: 40px;
+  border: 2px solid rgb(219, 217, 228);
+  border-left: 9px solid rgb(219, 217, 228);
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+body,html{
+  position: relative;
+  width: 100%;
+  height: 1024px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft JhengHei';
+  letter-spacing: 1px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+body{
+  overflow: scroll-y;
+}
+::selection{
+  background-color: rgb(20, 200, 255);
+}
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar-track{
+  background-color: #eee;
+  opacity: 0.2;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: 1px solid #eee;
+  outline: 1px solid slategrey;
+  border-radius: 5px;
+}
+header{
+  box-sizing: border-box;
+  width: 800px;
+  justify-content: center;
+  background-color: black;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+  z-index: 999;
+}
+nav{
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+header a{
+  display: inline-block;
+  color: #fff;
+  /* border: 1px solid #fff; */
+  text-decoration: none;
+  padding: 10px;
+}
+.headerNow{
+  display: inline-block;
+  color: rgb(0, 0, 148);
+  background-color: rgb(228, 194, 121);
+  font-weight: 600;
+  /* border: 1px solid #fff; */
+  text-decoration: none;
+  padding: 10px;
+}
+header a::after{
+  display: block;
+  content: '';
+  width: 0;
+  margin: 1px auto 0;
+  border-bottom: 1px solid white;
+  transition: width 0.3s ease-in-out;
+}
+header a:hover::after{
+  width: 100%
+}
+#container{
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  margin: 0px auto;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.8);
+  height: 650px;
+  width: 800px;
+  transition: 0.3s;
+  animation: fadein 1s;
+  position: relative;
+  z-index: 9999;
+}
+@keyframes fadein{
+0%{
+  transform: translate(-3px,-10px);
+  opacity: 0;
+}
+100%{
+  transform: translate(0px,0px);
+  opacity: 1;
+}
+}
